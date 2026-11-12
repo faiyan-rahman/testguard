@@ -64,7 +64,8 @@ def fibonacci(n):
     violations = analyze_production_code(cheating_prod_code)
     assert len(violations) == 1
     assert violations[0].issue_type == "SUSPICIOUS_HARDCODED_RETURN"
-    def test_detects_multiple_violations_in_file():
+
+def test_detects_multiple_violations_in_file():
     messy_code = """
 def test_nothing():
     pass
@@ -73,4 +74,6 @@ def test_easy():
     assert True
 """
     violations = analyze_test_code(messy_code)
+    # Erwartet: Missing Assertion für test_nothing UND Tautological Assert für test_easy
     assert len(violations) == 2
+
