@@ -1,3 +1,4 @@
+![TestGuard CI](https://github.com/faiyan-rahman/testguard/actions/workflows/ci.yml/badge.svg)
 # TestGuard
 
 **Static AST Analyzer & CI Guardrail for Detecting AI Reward Hacking in Python Test Suites.**
